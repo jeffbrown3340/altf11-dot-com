@@ -1,0 +1,9 @@
+node_modules/
+nodejs/
+etc/
+bin/
+assets/
+.expo/
+npm-debug.*
+.vscode/
+public/bundle.js
