@@ -5,14 +5,12 @@ import config from '../../config.base';
 
 class HomeScreen extends HomeScreenBase {
     state = {
-        loginAttempts: 0,
-        loggedInRep: '',
-        acctNum: ''
+        buttonMsg: 'Please click me.'
 
     }
 
     buttonClick() {
-        console.log("Button clicked.");
+        this.setState({buttonMsg: "Thanks a lot."});
     }
 
     render() {
@@ -20,7 +18,7 @@ class HomeScreen extends HomeScreenBase {
             <div className='row'>
                 <div style={styles.font18}>Under Construction</div>
                 <div className='col col-xs-12' style={styles.loginButtonDiv}>
-                    <button style={styles.loginButton} className='btn btn-danger' onClick={this.buttonClick.bind(this)}>Click Me!</button>
+                    <button style={styles.loginButton} className='btn btn-danger' onClick={this.buttonClick.bind(this)}>{this.state.buttonMsg}</button>
                 </div>
                 <div className='col col-xs-12' style={styles.footnoteText}>
                     jeff@jeffbrown.us<br />
