@@ -22,7 +22,6 @@ class HomeScreen extends HomeScreenBase {
                 </div>
                 <div className='col col-xs-12' style={styles.footnoteText}>
                     jeff@jeffbrown.us<br />
-                    954.683.3340<br /><br />
                 </div>
             </div>
             
